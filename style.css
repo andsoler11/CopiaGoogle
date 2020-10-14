@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: 6rem 1fr 9rem;
+    grid-template-areas: "header"
+                          "main"
+                          "footer";
+    height: 100vh;
+
+}
+
+.header {
+    padding: 1rem;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 7rem 3rem 4rem;
+    gap: 1.5rem;
+    justify-items: right;
+    padding-right: 2.8rem;
+}
+.gmail { 
+    font-size: 1.45rem;
+    margin-top: 1.4rem;
+}
+.gmail a {
+    text-decoration: none;
+    color: black;
+}
+.gmail a:hover {
+    text-decoration: underline;
+}
+.imagenes {
+    font-size: 1.45rem;
+    margin-top: 1.4rem;
+    padding-right: 0.3rem;
+}
+.imagenes a {
+    text-decoration: none;
+    color: black;
+}
+.imagenes a:hover {
+    text-decoration: underline;
+}
+.cuadrado {
+    margin-top: 0.9rem;
+    padding-right: 0.2rem;
+}
+.cuadrado img {
+    width: 2.7rem;
+    height: 2.7rem;
+    opacity: 0.5;
+}
+.cuadrado img:hover {
+    opacity: 1;
+}
+
+.profile {
+    justify-self: center;
+    justify-content: center;
+}
+.profile img {
+    border-radius: 2rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-top: 0.4rem;
+}
+
+
+
+
+
+
+
+.main {
+    padding: 1rem;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 20rem 10rem 6rem 10rem 1fr;
+    grid-template-areas: "logo"
+                        "search"
+                        "buttons"
+                        "help"
+                        "languages";
+    justify-items: center;
+    margin-top: 1rem;
+}
+
+.logo {
+    padding-top: 9rem;
+    grid-area: logo;
+}
+.logo img {
+    width: 30rem;
+}
+
+.searcher {
+    padding-top: 2.4rem;
+    grid-area: search;
+}
+
+#text {
+    width: 65rem;
+    border-radius: 5rem;
+    border: 1px solid black;
+    height: 5rem;
+    opacity: 0.1;
+}
+.buttons {
+    width: 37rem;
+    display: grid;
+    grid-template-columns: 17rem 19rem;
+    gap: 1rem;
+}
+.button{
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0, 0, 0, 0);
+    margin-top: 0.6rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.6rem;
+    opacity: 0.8;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.help{
+    display: grid;
+    grid-template-columns: 4rem 40rem;
+    gap: 1rem;
+    grid-area: help;
+}
+
+.help img {
+    height: 5.2rem;
+    padding-left: 1.5rem;
+    margin-top: 1.3rem;
+
+}
+.help p {
+    text-align: center;
+    font-size: 1.45rem;
+    margin-top: 3.2rem;
+    padding-left: rem;
+
+}
+.help a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.languages {
+    grid-area: languages;
+    padding-top: 1rem;
+}
+
+.languages p {
+    font-size: 1.4rem;
+}
+.languages a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.country {
+    border: 1px solid rgb(172, 172, 172, 0.3);
+    padding-top: 1.2rem;
+    padding-left: 3.3rem;
+}
+.country p {
+    font-size: 1.7rem;
+    opacity: 0.7;
+}
+
+.texto-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 35rem;
+    grid-template-areas: "texto-izquierda . texto-derecha";
+}
+
+.texto-izquierda {
+    display: grid;
+    grid-template-columns: 10.8rem 9.5rem 13rem 23rem;
+    justify-items: right;
+    grid-area: texto-izquierda;
+}
+
+.div-iz {
+    font-size: 1.6rem;
+    padding-top: 1.5rem;
+}
+.div-iz a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+
+
+
+
+.texto-derecha {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: left;
+    grid-area: texto-derecha;
+}
+.div-de {
+    font-size: 1.6rem;
+    padding-top: 1.5rem;
+}
+.div-de a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+
+
+
+/* .footer 
+    background: lightblue;
+    border: 0.2rem solid red;
+    padding: 1rem;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "country"
+                         "texto-izquierda texto-derecha"
+}
+
+.country {
+    grid-area: country;
+} */
+
